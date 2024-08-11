@@ -13,7 +13,7 @@ content = result.text
 # Create soup
 soup = BeautifulSoup(content, "lxml")
 
-# Find all archive link with the id 'BlogArchive1'
+# Find all archive link with the id 'ArchiveList'
 box = soup.find('div', id='ArchiveList')
 archives = box.find_all('a')
 
